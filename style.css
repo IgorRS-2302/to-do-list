@@ -35,7 +35,7 @@ body {
     color: #FFFFFF;
 }
 
-.search-container, .list-container {
+.search-container, .list-container, .new-tasks {
     display: flex;
     justify-content: center;
     Align-items: center;
@@ -74,7 +74,14 @@ body {
     background-color: #647878;
 }
 
-.list-container {
+.new-tasks {
     font-size: 1.2rem;
     padding-top: 8%;
+    flex-direction: column;
+}
+
+.list-container {
+    font-size: 1.2rem;
+    padding-top: 5%;
+    flex-direction: column;
 }

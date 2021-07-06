@@ -16,10 +16,34 @@
             <input type="text" placeholder="Pesquise seus itens" id="search-bar">
             <button type="submit" id="search-button"><i class="material-icons" id="search-icon">search</i></button>
         </div>
+        <div class="new-tasks">
+            <p>Nova Tarefa</p>
+            <form>
+                <div>
+                    <label for="description">Descrição</label>
+                    <input type="text" id="description">
+                </div>
+                <div>
+                    <label for="priority">Prioridade</label>
+                    <input type="radio" id="priority1" name="priority" value="high">
+                    <label for="state1">Alta</label>
+                    <input type="radio" id="priority2" name="priority" value="medium">
+                    <label for="state2">Média</label>
+                    <input type="radio" id="priority3" name="priority" value="low">
+                    <label for="state3">Baixa</label>
+
+                </div>
+                <div>
+                    <input type="button" id="add" value="Adicionar" onclick="addTasks()">
+                </div>
+            </form>
+        </div>
+        <hr>
         <div class="list-container">
-            <p>Minha Lista</p>
+            <p>Minhas Tarefas</p>
         </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>
